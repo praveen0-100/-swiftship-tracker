@@ -41,6 +41,7 @@ following Milestone 6 step 5.)
 5. Preview: "Track parcel P-001".
 
 ## 5. Test data (Phase 4)
+Run `sf apex run --file scripts/seed.apex --target-org <alias>` (also assign the permission set: `sf org assign permset --name Swift_Ship`). Or create manually:
 Create one Sender, one Parcel (weight 2.5, future estimated delivery date), one Receiver and one Delivery.
 Use the Parcel ID shown on the record (for example `P-001`) in the agent preview.
 
