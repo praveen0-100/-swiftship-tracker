@@ -44,3 +44,9 @@ VAL2 false Estimated delivery date cannot be in the past.
 
 ## 5. Agentforce preview
 See screenshots 08 and 09: query 'Track parcel P-001' routed to the Parcel Updates subagent, ran ParcelDetails, and returned Books Box, P-001, Booked, 2.5 kg, 2026-10-04. Agent SwiftShip Tracker Version 1 is Active.
+
+## 6. Permission set assignments (Swift_Ship)
+```
+Swift_Ship -> praveen82481557@gmail.com (admin)
+Swift_Ship -> swiftship_tracker@00dhg000003mnwf748743418.ext (EinsteinServiceAgent User, agent user)
+```
