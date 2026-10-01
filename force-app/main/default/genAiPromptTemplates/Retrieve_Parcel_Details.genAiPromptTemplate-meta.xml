@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Retrieves parcel details where Parcel_ID matches the user input.</description>
+    <developerName>Retrieve_Parcel_Details</developerName>
+    <masterLabel>Retrieve Parcel Details</masterLabel>
+    <templateVersions>
+        <content>Retrieve details from Parcel__c where Parcel_ID__c matches user input. Return response in this format:
+
+Parcel Tracking Update
+
+- Parcel Name: {!$Input:objectToSummarize.Name}
+- Parcel ID: {!$Input:objectToSummarize.Parcel_ID__c}
+- Status: {!$Input:objectToSummarize.Status__c}
+- Weight: {!$Input:objectToSummarize.Weight__c}
+- Estimated Delivery Date: {!$Input:objectToSummarize.Estimated_Delivery_Date__c}</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://Parcel__c</definition>
+            <masterLabel>Parcel</masterLabel>
+            <referenceName>Input:objectToSummarize</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultGPT4Omni</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <type>einstein_gpt__recordSummary</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

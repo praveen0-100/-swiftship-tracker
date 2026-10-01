@@ -9,7 +9,7 @@ the agent user, the guide uses the *Einstein Agent* license; create the set with
 in the UI, or assign `Swift_Ship` to the **Einstein Service Agent** user under
 Users > Permission Set Assignments.
 
-## 2. Prompt Template (Milestone 5)
+## 2. Prompt Template (Milestone 5) - DEPLOYED via metadata (genAiPromptTemplates/Retrieve_Parcel_Details); only screenshot/activation check needed
 Setup > Prompt Builder > New Prompt Template, type **Record summary** (Flex), object `Parcel__c`.
 
 - Label: `Retrieve Parcel Details`, API name `Retrieve_Parcel_Details`
@@ -45,7 +45,7 @@ Run `sf apex run --file scripts/seed.apex --target-org <alias>` (also assign the
 Create one Sender, one Parcel (weight 2.5, future estimated delivery date), one Receiver and one Delivery.
 Use the Parcel ID shown on the record (for example `P-001`) in the agent preview.
 
-## 6. Reports and dashboards (Sprint 5 and 6)
+## 6. Reports and dashboards (Sprint 5 and 6) - DEPLOYED via metadata (folder "SwiftShip Reports"); only screenshots needed
 - Report type "Parcels": *Parcels by Status* (summary grouped by Status), *Overdue Parcels* (Estimated Delivery Date < today, Status not Delivered).
 - Dashboard *SwiftShip Operations*: donut of parcels by status, table of overdue parcels.
 
