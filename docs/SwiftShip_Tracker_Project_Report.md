@@ -1,6 +1,6 @@
 # SwiftShip Tracker: Project Report
 
-Salesforce Developer project | Submitted by: Praveen P | Submission deadline: Saturday, 3 October 2026
+Salesforce Developer project | Team lead: Praveen P | Submission deadline: Saturday, 3 October 2026
 
 GitHub: https://github.com/praveen0-100/-swiftship-tracker
 
@@ -116,15 +116,15 @@ Agile, sprint-based, epics > stories > story points.
 
 | Sprint | Epic | Story | Points | Priority | Member |
 |---|---|---|---|---|---|
-| 1 | Developer setup | USN-1 Create and configure the Salesforce environment | 3 | High | Member1 |
-| 2 | Data modeling | USN-2 Create Parcel, Delivery, Sender, Receiver objects and relationships | 5 | High | Member2 |
-| 2 | Data modeling | USN-3 Tabs and Lightning app | 5 | High | Member3 |
-| 3 | Automation | USN-4 Validate parcel details and mandatory fields | 3 | High | Member4 |
-| 3 | Automation | USN-5 Flows to update parcel status and delivery info | 3 | High | Member4 |
-| 4 | Apex | USN-6 Triggers and classes for parcel actions | 5 | High | Member1 |
-| 4 | Apex | USN-7 Batch Apex for overdue parcels | 5 | High | Member2 |
-| 5 | Reports | USN-8 Status and delivery performance reports | 4 | High | Member3 |
-| 6 | Dashboards & AI | USN-9 Dashboards and Agentforce tracking | 4 | Medium | Member4 |
+| 1 | Developer setup | USN-1 Create and configure the Salesforce environment | 3 | High | Praveen P |
+| 2 | Data modeling | USN-2 Create Parcel, Delivery, Sender, Receiver objects and relationships | 5 | High | Priyan K |
+| 2 | Data modeling | USN-3 Tabs and Lightning app | 5 | High | Nishanth S |
+| 3 | Automation | USN-4 Validate parcel details and mandatory fields | 3 | High | Nandhakumar A |
+| 3 | Automation | USN-5 Flows to update parcel status and delivery info | 3 | High | Nandhakumar A |
+| 4 | Apex | USN-6 Triggers and classes for parcel actions | 5 | High | Praveen P |
+| 4 | Apex | USN-7 Batch Apex for overdue parcels | 5 | High | Priyan K |
+| 5 | Reports | USN-8 Status and delivery performance reports | 4 | High | Nishanth S |
+| 6 | Dashboards & AI | USN-9 Dashboards and Agentforce tracking | 4 | Medium | Nandhakumar A |
 
 ### Project tracker, velocity and burndown
 
@@ -142,7 +142,14 @@ Sprint dates follow the actual build log (all work done 30 Sep to 1 Oct 2026, ah
 Total: 37 story points over 6 sprints, average velocity about 6.2 points per sprint.
 
 ### Team
-Developer: **Praveen P** (praveen824815@gmail.com). This was delivered as a solo project, so Member1 to Member4 above are all Praveen P.
+
+| Name | Role |
+|---|---|
+| Praveen P | Team Lead (Member1 in the backlog above) |
+| Priyan K | Team Member (Member2) |
+| Nishanth S | Team Member (Member3) |
+| Nandhakumar A | Team Member (Member4) |
+| Prakash V | Team Member |
 
 ## 6. Development Phases
 

@@ -230,11 +230,16 @@ img { max-width: 100%; border: 1px solid #ccc; }
 
 (async () => {
   const blocks = parseMarkdown(fs.readFileSync(mdPath, 'utf8'));
-  const buf = await Packer.toBuffer(buildDocx(blocks));
-  fs.writeFileSync(path.join(docsDir, 'SwiftShip_Tracker_Project_Report.docx'), buf);
   const htmlPath = path.join(process.env.REPORT_HTML_DIR || docsDir, 'SwiftShip_Tracker_Project_Report.html');
   fs.writeFileSync(htmlPath, buildHtml(blocks));
   console.log('Blocks:', blocks.length, '| screenshots:', SHOTS.length);
-  console.log('DOCX written:', buf.length, 'bytes');
   console.log('HTML written:', htmlPath);
+  const buf = await Packer.toBuffer(buildDocx(blocks));
+  try {
+    fs.writeFileSync(path.join(docsDir, 'SwiftShip_Tracker_Project_Report.docx'), buf);
+    console.log('DOCX written:', buf.length, 'bytes');
+  } catch (e) {
+    console.error('DOCX NOT written (' + e.code + '). Close the file in Word and run this script again.');
+    process.exitCode = 1;
+  }
 })();
