@@ -1,6 +1,8 @@
 # SwiftShip Tracker: Project Report
 
-Salesforce Developer project | Submission deadline: Saturday, 3 October 2026
+Salesforce Developer project | Submitted by: Praveen P | Submission deadline: Saturday, 3 October 2026
+
+GitHub: https://github.com/praveen0-100/-swiftship-tracker
 
 ## 1. Introduction
 
@@ -124,7 +126,23 @@ Agile, sprint-based, epics > stories > story points.
 | 5 | Reports | USN-8 Status and delivery performance reports | 4 | High | Member3 |
 | 6 | Dashboards & AI | USN-9 Dashboards and Agentforce tracking | 4 | Medium | Member4 |
 
-Update sprint dates to your real schedule (the template shows 2022 dates).
+### Project tracker, velocity and burndown
+
+Sprint dates follow the actual build log (all work done 30 Sep to 1 Oct 2026, ahead of the 3 Oct deadline).
+
+| Sprint | Total story points | Duration | Start | End (planned) | Points completed | Release date (actual) |
+|---|---|---|---|---|---|---|
+| Sprint-1 | 3 | 1 day | 30 Sep 2026 | 30 Sep 2026 | 3 | 30 Sep 2026 |
+| Sprint-2 | 10 | 1 day | 30 Sep 2026 | 30 Sep 2026 | 10 | 30 Sep 2026 |
+| Sprint-3 | 6 | 1 day | 30 Sep 2026 | 30 Sep 2026 | 6 | 30 Sep 2026 |
+| Sprint-4 | 10 | 1 day | 30 Sep 2026 | 30 Sep 2026 | 10 | 30 Sep 2026 |
+| Sprint-5 | 4 | 1 day | 1 Oct 2026 | 1 Oct 2026 | 4 | 1 Oct 2026 |
+| Sprint-6 | 4 | 1 day | 1 Oct 2026 | 1 Oct 2026 | 4 | 1 Oct 2026 |
+
+Total: 37 story points over 6 sprints, average velocity about 6.2 points per sprint.
+
+### Team
+Developer: **Praveen P** (praveen824815@gmail.com). This was delivered as a solo project, so Member1 to Member4 above are all Praveen P.
 
 ## 6. Development Phases
 
@@ -139,7 +157,15 @@ Update sprint dates to your real schedule (the template shows 2022 dates).
 **Phase 5: Deployment and maintenance.** Validated and deployed to a Developer Org with `sf project deploy start`. Sandbox/UAT and CI/CD are out of scope for this prototype. Maintenance: monitor flow failures, refine prompts and subagent topics, keep parcel data current.
 
 ## 7. Functional and Performance Testing
-Screenshots to add in `docs/screenshots/`: object creation, parcel with auto-number ID, validation error (weight 0), status-change email, batch run, flow debug, agent preview "Track parcel P-001", reports and dashboard.
+Evidence is in `docs/test-evidence.md` (5/5 Apex tests passing, validation errors for weight 0 and past dates, flow output for P-001, org records) and `docs/screenshots/`:
+
+- `01-parcel-object-fields.jpg`: Parcel object fields
+- `02-parcel-record-P-001.jpg`: Parcel record with auto-number ID
+- `07-dashboard-swiftship-operations.jpg`: SwiftShip Operations dashboard
+- `08-agent-preview-track-P-001.jpg`: agent answering "Track parcel P-001" (subagent, action and grounded output in the trace)
+- `09-agent-active.jpg`: agent SwiftShip Tracker, Version 1 (Active)
+
+The `Retrieve Parcel Details` prompt template is Published in the org. The agent definition is stored in the repo under `force-app/main/default/aiAuthoringBundles/SwiftShip_Tracker`.
 
 ## 8. Advantages and Disadvantages
 

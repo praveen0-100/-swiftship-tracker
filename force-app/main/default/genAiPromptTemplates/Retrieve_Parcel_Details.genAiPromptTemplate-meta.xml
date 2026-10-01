@@ -3,6 +3,7 @@
     <description>Retrieves parcel details where Parcel_ID matches the user input.</description>
     <developerName>Retrieve_Parcel_Details</developerName>
     <masterLabel>Retrieve Parcel Details</masterLabel>
+    <overridable>false</overridable>
     <templateVersions>
         <content>Retrieve details from Parcel__c where Parcel_ID__c matches user input. Return response in this format:
 
@@ -20,8 +21,10 @@ Parcel Tracking Update
             <referenceName>Input:objectToSummarize</referenceName>
             <required>true</required>
         </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
         <primaryModel>sfdc_ai__DefaultGPT4Omni</primaryModel>
         <status>Published</status>
+        <versionIdentifier>KEFLe9lM/bwufr238h3Z+9OY1CJ/G4uOpOCvkE/QWzo=_1</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__recordSummary</type>
     <visibility>Global</visibility>
