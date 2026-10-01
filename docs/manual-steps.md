@@ -54,3 +54,8 @@ Developer Console > Execute Anonymous:
 ```apex
 System.schedule('Overdue parcels daily', '0 0 8 * * ?', new OverdueParcelBatch());
 ```
+
+## Status (updated 2026-10-01)
+- Agent `SwiftShip Tracker` (Version 1) was created in the new Agentforce Builder as a separate agent (existing org agents were left untouched), committed and **activated**. The `ParcelDetails` action's `Output` must be typed `string` (an `object` type makes the preview fail).
+- Page layouts for all four objects were added so every field is visible and editable.
+- Evidence: `docs/screenshots/` and `docs/test-evidence.md`.
