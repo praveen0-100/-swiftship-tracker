@@ -32,6 +32,10 @@ sf apex run test --target-org swiftship --code-coverage --result-format human --
 Then follow `docs/manual-steps.md` for the parts that can only be done in the Setup UI
 (Prompt Template, Agentforce agent, reports and dashboards, screenshots).
 
+## Report files
+
+`docs/SwiftShip_Tracker_Project_Report` is available as `.docx`, `.pdf` and `.md`. Rebuild the Word/HTML versions with `node scripts/build-report.js` (the PDF is printed from the HTML with headless Chrome).
+
 ## Submission
 
 Final deadline: **Saturday, 3 October 2026**. Push this repo to GitHub, add the filled
