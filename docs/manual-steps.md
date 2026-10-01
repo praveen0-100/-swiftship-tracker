@@ -9,7 +9,7 @@ the agent user, the guide uses the *Einstein Agent* license; create the set with
 in the UI, or assign `Swift_Ship` to the **Einstein Service Agent** user under
 Users > Permission Set Assignments.
 
-## 2. Prompt Template (Milestone 5) - DEPLOYED via metadata (genAiPromptTemplates/Retrieve_Parcel_Details); only screenshot/activation check needed
+## 2. Prompt Template (Milestone 5) - DEPLOYED via metadata and ACTIVATED (Version 2)
 Setup > Prompt Builder > New Prompt Template, type **Record summary** (Flex), object `Parcel__c`.
 
 - Label: `Retrieve Parcel Details`, API name `Retrieve_Parcel_Details`
@@ -60,3 +60,4 @@ System.schedule('Overdue parcels daily', '0 0 8 * * ?', new OverdueParcelBatch()
 - Page layouts for all four objects were added so every field is visible and editable.
 - Evidence: `docs/screenshots/` and `docs/test-evidence.md`.
 - Phase 3, Milestone 2 done (2026-10-01): `Swift_Ship` is assigned to the agent user `EinsteinServiceAgent User` (`swiftship_tracker@...ext`) as well as to the admin user. Command: `sf org assign permset --name Swift_Ship --on-behalf-of <agent-username>`.
+- Prompt template (2026-10-02): a metadata deploy only publishes a version, it does not activate it. Version 2 was activated in Setup > Prompt Builder > Retrieve Parcel Details > Activate. "No active template version" means this step is missing.

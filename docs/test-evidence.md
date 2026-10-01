@@ -50,3 +50,15 @@ See screenshots 08 and 09: query 'Track parcel P-001' routed to the Parcel Updat
 Swift_Ship -> praveen82481557@gmail.com (admin)
 Swift_Ship -> swiftship_tracker@00dhg000003mnwf748743418.ext (EinsteinServiceAgent User, agent user)
 ```
+
+## 7. Prompt template Retrieve_Parcel_Details (Version 2, Active)
+Version 1 asked the model to "retrieve details from Parcel__c", so it answered that it could not access the data, and the template was never activated. Version 2 supplies the record and says to use only the given values, and is **Active**. Generated output for P-001 (via `ConnectApi.EinsteinLLM.generateMessagesForPromptTemplate`):
+```
+Parcel Tracking Update
+
+- Parcel Name: Books Box
+- Parcel ID: P-001
+- Status: Booked
+- Weight: 2.5
+- Estimated Delivery Date: 10/04/2026
+```

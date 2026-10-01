@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>KEFLe9lM/bwufr238h3Z+9OY1CJ/G4uOpOCvkE/QWzo=_2</activeVersionIdentifier>
     <description>Retrieves parcel details where Parcel_ID matches the user input.</description>
     <developerName>Retrieve_Parcel_Details</developerName>
     <masterLabel>Retrieve Parcel Details</masterLabel>
@@ -25,6 +26,28 @@ Parcel Tracking Update
         <primaryModel>sfdc_ai__DefaultGPT4Omni</primaryModel>
         <status>Published</status>
         <versionIdentifier>KEFLe9lM/bwufr238h3Z+9OY1CJ/G4uOpOCvkE/QWzo=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You are the SwiftShip Tracker assistant. The parcel record for the customer&apos;s Parcel ID is provided below. Use only these values, do not look anything up, and do not say that you lack access. Reply in exactly this format:
+
+Parcel Tracking Update
+
+- Parcel Name: {!$Input:objectToSummarize.Name}
+- Parcel ID: {!$Input:objectToSummarize.Parcel_ID__c}
+- Status: {!$Input:objectToSummarize.Status__c}
+- Weight: {!$Input:objectToSummarize.Weight__c}
+- Estimated Delivery Date: {!$Input:objectToSummarize.Estimated_Delivery_Date__c}</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://Parcel__c</definition>
+            <masterLabel>Parcel</masterLabel>
+            <referenceName>Input:objectToSummarize</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultGPT4Omni</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>KEFLe9lM/bwufr238h3Z+9OY1CJ/G4uOpOCvkE/QWzo=_2</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__recordSummary</type>
     <visibility>Global</visibility>
