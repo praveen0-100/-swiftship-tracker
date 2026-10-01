@@ -161,6 +161,8 @@ Evidence is in `docs/test-evidence.md` (5/5 Apex tests passing, validation error
 
 - `01-parcel-object-fields.jpg`: Parcel object fields
 - `02-parcel-record-P-001.jpg`: Parcel record with auto-number ID
+- `04-report-parcels-by-status.jpg` and `05-report-overdue-parcels.jpg`: the two reports
+- `06-validation-error-weight-zero.jpg`: red validation error when saving Weight = 0
 - `07-dashboard-swiftship-operations.jpg`: SwiftShip Operations dashboard
 - `08-agent-preview-track-P-001.jpg`: agent answering "Track parcel P-001" (subagent, action and grounded output in the trace)
 - `09-agent-active.jpg`: agent SwiftShip Tracker, Version 1 (Active)
