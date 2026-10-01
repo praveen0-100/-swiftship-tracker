@@ -16,7 +16,7 @@ const shotsDir = path.join(docsDir, 'screenshots');
 const SHOTS = [
   ['01-parcel-object-fields.jpg', 'Parcel object: fields and relationships'],
   ['02-parcel-record-P-001.jpg', 'Parcel record P-001 with all fields'],
-  ['03-parcel-details.png', 'Parcel details'],
+  ['03-parcel-details.png', 'Parcel Details flow in Flow Builder (Active)'],
   ['04-retrieve-parcel-details.png', 'Retrieve Parcel Details prompt template'],
   ['04-report-parcels-by-status.jpg', 'Report: Parcels by Status'],
   ['05-report-overdue-parcels.jpg', 'Report: Overdue Parcels'],

@@ -54,3 +54,7 @@ Record one continuous screen capture with your voice. Follow the timeline below.
    https://github.com/praveen0-100/-swiftship-tracker
 5. Test the video link in a private/incognito window to confirm it plays without logging in.
 6. Deadline: Saturday, 3 October 2026.
+
+## Ready-made video
+
+A narrated slideshow version (about 3 minutes, built from the project screenshots) is in `video/SwiftShip_Tracker_Demo.mp4`. Upload it as-is, or record the live walkthrough above for a stronger demo.

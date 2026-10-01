@@ -168,7 +168,7 @@ Evidence is in `docs/test-evidence.md` (5/5 Apex tests passing, validation error
 
 - `01-parcel-object-fields.jpg`: Parcel object fields
 - `02-parcel-record-P-001.jpg`: Parcel record with auto-number ID
-- `03-parcel-details.png`: Parcel details
+- `03-parcel-details.png`: Parcel Details flow in Flow Builder (Active)
 - `04-retrieve-parcel-details.png`: Retrieve Parcel Details prompt template
 - `04-report-parcels-by-status.jpg` and `05-report-overdue-parcels.jpg`: the two reports
 - `06-validation-error-weight-zero.jpg`: red validation error when saving Weight = 0
