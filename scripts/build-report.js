@@ -24,6 +24,7 @@ const SHOTS = [
   ['07-dashboard-swiftship-operations.jpg', 'Dashboard: SwiftShip Operations'],
   ['08-agent-preview-track-P-001.jpg', 'Agent preview: "Track parcel P-001"'],
   ['09-agent-active.jpg', 'Agent SwiftShip Tracker, Version 1 (Active)'],
+  ['10-retrieve-parcel-details-book-box.png', 'Prompt Builder preview: resolved prompt filled with P-001 data'],
 ].filter(([f]) => fs.existsSync(path.join(shotsDir, f)));
 
 // ---------- markdown parsing ----------
